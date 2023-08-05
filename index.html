@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHi's Portfolio</title>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/e0c979d72c.js" crossorigin="anonymous"></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <!--ファビコン-->
+        <link rel ="icon" type="image/png" href="images/favicon.png">
+        <!--フォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>    
+            <h1>CHi's Portfolio</h1>
+            <nav id="header-list">
+                <ul>
+                    <li onclick="location.href='#about'"><span>A</span>bout</li>
+                    <li onclick="location.href='#works'"><span>W</span>orks</li>
+                    <li onclick="location.href='#contact'"><span>C</span>ontact</li>
+                </ul> 
+            </nav>
+        </header>
+        <div id="menu">
+            <div id="bars-icon">
+                <i class="fa-solid fa-bars fa-3x" id="bars"></i>
+            </div>
+            <div id="xmark-icon" class="hide">
+                <i class="fa-solid fa-xmark fa-3x" id="xmark"></i>
+            </div>
+            <div id="mask1" class="hide"></div>
+        </div>
+        <div id="menu-list" class="hide">
+            <ul>
+                <li onclick="location.href='#about'" class="menu-list-li">About</li>
+                <li onclick="location.href='#works'" class="menu-list-li">Works</li>
+                <li onclick="location.href='#contact'" class="menu-list-li">Contact</li>
+            </ul>
+        </div>
+        <main>
+            <div id="welcome">
+                <div class="container">
+                    <h1>
+                        <span>W</span>
+                        <span>E</span>
+                        <span>L</span>
+                        <span>C</span>
+                        <span>O</span>
+                        <span>M</span>
+                        <span>E</span>
+                        <span>!</span>
+                    </h1>
+                </div>
+            </div>
+            <div id="about" class="wrapper">
+                <div class="container">
+                    <h2>About</h2>
+                    <div id="about-contents">
+                        <img src="images/profile.jpg">
+                        <div id="about-text">
+                            <p class="fade-in">ご訪問ありがとうございます。</p>
+                            <p class="fade-in">早稲田大学で文系からWEBエンジニアを目指す学生、CHiです。</p>
+                            <p class="fade-in">フロントエンド領域に関心があり、HTML/CSS/JavaScriptを中心に日々勉強をしています。
+                                また、PaizaやAtCoderのコーデイング問題を解くことも好きで、その際はJavaScriptかJavaを使用します。
+                                その他、授業で触れた程度ですが、R言語を使用したこともあります。</p>
+                            <p class="fade-in">現在は主にWEBサイト制作に力を入れていますが、いずれはWEBアプリケーション制作にも取り組んでみたいと考えています。</p>
+                            <p class="fade-in">よろしくお願いいたします。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="works" class="wrapper">
+                <div class="container">
+                    <h2>Works</h2>
+                    <p id="works-text">画像をクリックすると詳細をご覧いただけます。</p>
+                    <div id="works-contents">
+                        <div class="work fade-in">
+                            <img src="images/work1.png" id="work1" class="work-img">
+                            <p>メロディー♪ピアノ教室のホームページ</p>
+                        </div>
+                        <div class="work fade-in">
+                            <img src="images/work2.png" id="work2" class="work-img">
+                            <p>ポートフォリオサイト</p>
+                        </div>
+                        <!--<div class="work fade-in">
+                            <img src="images/work1.png" id="work3" class="work-img">
+                            <p>メロディー♪ピアノ教室のホームページ</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div id="mask2" class="hide"></div>
+
+            <article id="work1-detail" class="detail hide">
+                <div class="modal">
+                    <img src="images/work1.png">
+                    <h3>メロディー♪ピアノ教室のホームページ</h3>
+                    <div class="detail-text">
+                        <h4>概要</h4>
+                        <p>神奈川県横浜市鶴見区にあるピアノ教室、メロディーピアノ教室のホームページです。
+                            他のピアノ教室との差別化を図るため、当教室ならではの優しげな雰囲気が伝わるようなホームページに仕上げました。</p>
+                    </div>
+                    <div class="detail-text">
+                        <h4>使用技術</h4>
+                        <p>AdobeXD、HTML、CSS、JavaScript</p>
+                    </div>
+                    <div class="detail-text">
+                        <h4>制作日数</h4>
+                        <p>4日</p>
+                    </div>
+                    <div class="detail-text">
+                        <h4>工夫した点</h4>
+                        <p>制作目的が「教室の優しい雰囲気を伝えること」であったため、柔らかな印象を与えることを重視しました。
+                            例として、全体的に丸みのあるオブジェクトを配置したり、スクロールでコンテンツがふわりと浮かんでくるような動きをつけたりしました。
+                            また、トップ画面には教室名とイメージキャラクターを動きつきで登場させ、楽しげな雰囲気を演出しました。
+                            レスポンシブ対応を施しており、タブレットやスマホではフォーマットを整えるほか、ヘッダーのメニューがハンバーガーメニューに変わるなどの対応がされています。
+                        </p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="http://melodypiano.main.jp" target="_blank" class="btn">作品を見る&emsp;→</a>
+                    </div>
+                </div>
+            </article>
+            <article id="work2-detail" class="detail hide">
+                <div class="modal">
+                    <img src="images/work2.png">
+                    <h3>ポートフォリオサイト</h3>
+                    <div class="detail-text">
+                        <h4>概要</h4>
+                        <p>私自身の作品を紹介するためのポートフォリオサイトです。
+                            青空と雲をイメージしたデザインで、可愛らしく和やかな印象のサイトに仕上げました。</p>
+                    </div>
+                    <div class="detail-text">
+                        <h4>使用技術</h4>
+                        <p>AdobeXD、HTML、CSS、JavaScript</p>
+                    </div>
+                    <div class="detail-text">
+                        <h4>制作日数</h4>
+                        <p>5日</p>
+                    </div>
+                    <div class="detail-text">
+                        <h4>工夫した点</h4>
+                        <p>ページ上部で雲が永続的にゆったりと流れる動きをつけ、ゆるやかさを演出しました。
+                            また、文章やメニューが下からふわりと現れる動きや、コンテンツがゆっくりと大きくなる動きをつけ、優しげな印象になるようにしました。
+                            「Works」では、作品の写真をタップすることでモーダルが開き、作品の詳細情報をご覧いただけます。
+                            レスポンシブ対応を施しており、タブレットやスマホではフォーマットを整えるほか、ヘッダーのメニューがハンバーガーメニューに変わるなどの対応がされています。
+                        </p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="http://melodypiano.main.jp" target="_blank" class="btn">作品を見る&emsp;→</a>
+                    </div>
+                </div>
+            </article>
+            <!--<article id="work3-detail" class="detail hide">
+                <div class="modal">
+                    <img src="images/work1.png">
+                    <h3></h3>
+                    <p>説明文</p>
+                </div>
+            </article>-->
+
+            <div id="contact" class="wrapper">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <p><i class="fa-regular fa-envelope"></i>&emsp;yamabukiruri.chi◆gmail.com</p>
+                    <p>（◆を@に変換してご送信ください。）</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <p>&copy; CHi</p>
+            </div>
+        </footer>
+
+        <!--JavaScript-->
+        <script src="script.js"></script>
+    </body>
+</html>
