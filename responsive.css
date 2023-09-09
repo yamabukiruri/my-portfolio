@@ -166,6 +166,10 @@
         width: 85%;
     }
 
+    .detail video {
+        margin-top: 20px;
+    }
+
     .detail h3 {
         font-size: 15px;
     }

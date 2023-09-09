@@ -346,6 +346,10 @@ h1 span:nth-child(8) {
     width: 90%;
 }
 
+.detail video {
+    width: 90%;
+}
+
 .detail-text {
     width: 90%;
     margin-bottom: 50px;
