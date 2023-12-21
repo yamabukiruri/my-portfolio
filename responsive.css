@@ -181,4 +181,17 @@
     .detail-text h4 {
         text-align: center;
     }
+
+    #contact input {
+        height: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+        border: 1px solid gray;
+    }
+}
+
+@media (max-width: 350px) {
+    #contact form {
+        padding: 10px;
+    }
 }

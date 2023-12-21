@@ -206,8 +206,16 @@
             <div id="contact" class="wrapper">
                 <div class="container">
                     <h2>Contact</h2>
-                    <p><i class="fa-regular fa-envelope"></i>&emsp;yamabukiruri.chi◆gmail.com</p>
-                    <p>（◆を@に変換してご送信ください。）</p>
+                    <!--<p><i class="fa-regular fa-envelope"></i>&emsp;yamabukiruri.chi◆gmail.com</p>
+                    <p>（◆を@に変換してご送信ください。）</p>-->
+                    <form method="post" action="contact_check.php">
+                        <p>お名前</p>
+                        <input type="text" name="name">
+                        <p>メールアドレス</p>
+                        <input type="text" name="email">
+                        <p>お問い合わせ内容</p>
+                        <textarea name="message" placeholder="こちらにお問い合わせ内容をお書きください。"></textarea>
+                    </form>
                 </div>
             </div>
         </main>

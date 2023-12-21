@@ -383,8 +383,26 @@ h1 span:nth-child(8) {
 
 /*****************contact*****************/
 
-#contact p {
-    text-align: center;
+#contact form {
+    background-color: #c1e6ed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact input {
+    height: 40px;
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    height: 200px;
+    width: 100%;
+    border: 1px solid gray;
+    resize: none;
+    border-radius: 5px;
 }
 
 /*****************footer*****************/
