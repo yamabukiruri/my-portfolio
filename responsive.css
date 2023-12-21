@@ -182,12 +182,12 @@
         text-align: center;
     }
 
-    #contact input {
+    /*#contact input {
         width: 100%;
-    }
+    }*/
 }
 
-@media (max-width: 350px) {
+/*@media (max-width: 350px) {
     #contact form {
         padding: 10px;
     }
@@ -195,4 +195,4 @@
     #contact #submit-btn {
         width: 100%;
     }
-}
+}*/

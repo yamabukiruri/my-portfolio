@@ -383,7 +383,11 @@ h1 span:nth-child(8) {
 
 /*****************contact*****************/
 
-#contact form {
+#contact p {
+    text-align: center;
+}
+
+/*#contact form {
     background-color: #c1e6ed;
     padding: 20px;
     border-radius: 10px;
@@ -424,7 +428,7 @@ h1 span:nth-child(8) {
     transform: scale(1.05);
     background-color: #04212e;
     color: rgb(207, 207, 207);
-}
+}*/
 
 /*****************footer*****************/
 
